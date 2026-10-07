@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 // GitHub Pages serves static files only; reuse the client UI without the SSR server.
 export default defineConfig({
-  base: "/exercices-c/",
+  base: "/c/",
   plugins: [react()],
   resolve: { alias: { "@": fileURLToPath(new URL(".", import.meta.url)) } },
   build: { outDir: "dist/pages", emptyOutDir: true },

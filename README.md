@@ -1,6 +1,6 @@
 # Exercices C · MPI
 
-24 exercices en français, des fonctions élémentaires aux graphes et à unir-trouver. Interface inspirée du site [ocaml-exercices](https://github.com/fortierq/ocaml-exercices) de Quentin Fortier : navigation par chapitre, lien MPI, bouton GitHub et mode clair/sombre.
+24 exercices en français, des fonctions élémentaires aux graphes et à unir-trouver. Interface inspirée du site [ocaml-exercices](https://github.com/mpi-informatique/ocaml) de Quentin Fortier : navigation par chapitre, lien MPI, bouton GitHub et mode clair/sombre.
 
 ## Stack
 
@@ -29,7 +29,7 @@ La collection, les contrats, corrections et jeux de tests se trouvent dans `lib/
 
 Les binaires gzip portent l’extension `.bin` pour éviter une décompression HTTP implicite avant la décompression applicative. Les assets du compilateur sont versionnés dans `public/compiler/`. `upstream.json` indique la provenance et les empreintes SHA-256. `shared.js` est conservé sans modification ; `worker.js` est l'adaptation C propre au site. Les licences Apache-2.0 et LLVM sont incluses. Décompression native avec `DecompressionStream`, donc navigateur moderne requis. Aucun CDN requis à l'exécution.
 
-Dépôt GitHub prévu : `fortierq/exercices-c`. Le bouton GitHub cible ce dépôt.
+Dépôt GitHub prévu : `mpi-informatique/c`. Le bouton GitHub cible ce dépôt.
 
 ## Validation
 
@@ -39,4 +39,4 @@ L'interface expose facultativement quatre outils WebMCP si `document.modelContex
 
 ## GitHub Pages
 
-`pnpm build:pages` produit un site entièrement statique dans `dist/pages`, avec une page `index.html` et le préfixe `/exercices-c/` pour les ressources. `pnpm preview:pages` permet de le vérifier localement à `/exercices-c/`. Le workflow GitHub Pages publie ce dossier ; `dist/client` appartient au build serveur Vinext et ne contient pas de page HTML d’entrée.
+`pnpm build:pages` produit un site entièrement statique dans `dist/pages`, avec une page `index.html` et le préfixe `/c/` pour les ressources. `pnpm preview:pages` permet de le vérifier localement à `/c/`. Le workflow GitHub Pages publie ce dossier ; `dist/client` appartient au build serveur Vinext et ne contient pas de page HTML d’entrée.
